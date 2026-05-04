@@ -3,7 +3,7 @@ WORKDIR /app
 COPY . .
 RUN mvn clean package -DskipTests
 
-FROM openjdk:8-jdk-alpine  
+FROM openjdk:17.0.2-jdk-slim  
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 EXPOSE 8080
