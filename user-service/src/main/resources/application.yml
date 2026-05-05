@@ -8,7 +8,7 @@ spring:
     name: user-service
   data:
     mongodb:
-      uri: ${MONGODB_URI:mongodb+srv://root:nabil@nabil.sk00j3x.mongodb.net/?appName=Nabil}
+      uri: ${MONGODB_URI:mongodb+srv://root:redhat@nabil.sk00j3x.mongodb.net/?appName=Nabil}
       database: Nabil
   jackson:
     default-property-inclusion: non_null
