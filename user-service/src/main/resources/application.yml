@@ -8,8 +8,8 @@ spring:
     name: user-service
   data:
     mongodb:
-      uri: ${MONGODB_URI:mongodb+srv://linux:redhat@cluster0.32n20bl.mongodb.net/users_db?retryWrites=true&w=majority&appName=Cluster0}
-      database: users_db
+      uri: ${MONGODB_URI:mongodb+srv://root:redhat}
+      database: myproject
   jackson:
     default-property-inclusion: non_null
     serialization:
