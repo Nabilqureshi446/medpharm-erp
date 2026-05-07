@@ -20,7 +20,7 @@ spec:
       spec:
         containers: 
         - name: product-service
-          image:
+          image: 030797369345.dkr.ecr.us-east-1.amazonaws.com/product-service:latest
           ports:
           - containerPort: 8082
           resources:

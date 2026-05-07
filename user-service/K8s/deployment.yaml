@@ -5,7 +5,7 @@ metadata:
  labels:
   app: user-service
 spec:
-  startegies:
+  strategies:
     type: RollingUpdate
   replicas: 2
   selector:
@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: user-service
-        image:
+        image: 030797369345.dkr.ecr.us-east-1.amazonaws.com/user-service:latest
         ports:
         - containerPort: 8081
         resources:
