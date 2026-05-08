@@ -11,7 +11,7 @@ spec:
     http:
       paths:
       - pathType: Prefix
-        path: "/api/v1/auth"
+        path: "/api/v1/actuator"
         backend:
           service:
             name: user-service
