@@ -1,13 +1,16 @@
 apiVersion: v1
-kind: service
+kind: Service
+
 metadata:
   name: product-service
-spec: 
+
+spec:
   type: ClusterIP
+
   selector:
     app: product-service
+
   ports:
-  - protocol: TCP
-    port: 8082
-    targetPort: 8082
-    
+    - protocol: TCP
+      port: 8082
+      targetPort: 8082

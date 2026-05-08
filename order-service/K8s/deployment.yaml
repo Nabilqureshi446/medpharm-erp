@@ -1,30 +1,39 @@
 apiVersion: apps/v1
 kind: Deployment
+
 metadata:
   name: order-service
   labels:
-    app: order-service    
+    app: order-service
+
 spec:
-  strategies:
-    type: RollingUpdate 
+  strategy:
+    type: RollingUpdate
+
   replicas: 2
-  selector:   
+
+  selector:
     matchLabels:
       app: order-service
+
   template:
-    metadata: 
+    metadata:
       labels:
-        app: order-service  
+        app: order-service
+
     spec:
-      containers: 
-      - name: order-service
-        image: 030797369345.dkr.ecr.us-east-1.amazonaws.com/order-service:latest
-        ports:
-        - containerPort: 8083
-        resources:
-          limits:
-            memory: "512Mi"
-            cpu: "500m"
-          requests:
-            memory: "256Mi"
-            cpu: "250m" 
+      containers:
+        - name: order-service
+          image: 030797369345.dkr.ecr.us-east-1.amazonaws.com/order-service:latest
+
+          ports:
+            - containerPort: 8083
+
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+
+            requests:
+              memory: "256Mi"
+              cpu: "250m"

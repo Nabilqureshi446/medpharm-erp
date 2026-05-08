@@ -1,14 +1,16 @@
-apiVersion: apps/v1
-kind: service
+apiVersion: v1
+kind: Service
+
 metadata:
   name: user-service
-spec: 
+
+spec:
   type: ClusterIP
+
   selector:
     app: user-service
-    ports:
+
+  ports:
     - protocol: TCP
       port: 8081
       targetPort: 8081
-    selector:
-      app: user-service
