@@ -6,8 +6,8 @@ spec:
   type: ClusterIP
   selector:
     app: product-service
-    ports:
-    - protocol: TCP
-      port: 8082
-      targetPort: 8082
+  ports:
+  - protocol: TCP
+    port: 8082
+    targetPort: 8082
     
