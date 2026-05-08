@@ -39,6 +39,6 @@ cors:
 
 services:
   product-service:
-    base-url: ${PRODUCT_SERVICE_URL:http://100.26.199.129:8082/api/v1}
+    base-url: ${PRODUCT_SERVICE_URL:http://a9d2bf7aa8662457583842a305a1a089-1581701768.us-east-1.elb.amazonaws.com:8082/api/v1}
   user-service:
-    base-url: ${USER_SERVICE_URL:http://100.26.199.129:8081/api/v1}
+    base-url: ${USER_SERVICE_URL:http://a9d2bf7aa8662457583842a305a1a089-1581701768.us-east-1.elb.amazonaws.com:8081/api/v1}
